@@ -2,6 +2,8 @@
 Special Functions Read Me
 ===
 
+Wikipedia sayeth:
+
 > Special functions are particular mathematical functions which have more or less established names and notations due to their importance in mathematical analysis, functional analysis, physics, or other applications.
 
 > There is no general formal definition, but the list of mathematical functions contains functions which are commonly accepted as special.
