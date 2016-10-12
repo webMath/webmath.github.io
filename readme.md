@@ -13,4 +13,10 @@ Wikipedia: [Special Functions]( https://en.wikipedia.org/wiki/Special_functions 
 
 Wikipedia: [List of mathematical functions]( https://en.wikipedia.org/wiki/List_of_mathematical_functions )
 
+## Peeps in the business / Maths Bros
+
+* https://github.com/bos/math-functions
+* https://github.com/lvandeve/jmat
+	* demo: http://lodev.org/jmat/jmat_demo.html
+* https://www.gnu.org/software/gsl/manual/html_node/Special-Functions.html#Special-Functions
 
