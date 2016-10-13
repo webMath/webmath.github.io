@@ -1,5 +1,5 @@
 
-Special Functions Read Me
+Web Math Read Me
 ===
 
 Wikipedia sayeth:
@@ -15,10 +15,11 @@ Wikipedia: [Special Functions]( https://en.wikipedia.org/wiki/Special_functions 
 
 Wikipedia: [List of mathematical functions]( https://en.wikipedia.org/wiki/List_of_mathematical_functions )
 
-## Peeps in the business / Maths Bros
+## Peeps in the business
 
 * https://github.com/bos/math-functions
 * https://github.com/lvandeve/jmat
 	* demo: http://lodev.org/jmat/jmat_demo.html
 * https://www.gnu.org/software/gsl/manual/html_node/Special-Functions.html#Special-Functions
-
+* http://www.susanjfowler.com/blog/2016/8/13/so-you-want-to-learn-physics
+* http://mpmath.org/
