@@ -1,0 +1,55 @@
+<!doctype html><html lang=en >
+<head>
+<title>cut-into-sections-r1</title>
+<meta charset=utf-8 >
+</head>
+<body>
+<script>
+
+    document.body.style.cssText = ' font: bold 12pt monospace; ';
+
+    var info = document.body.appendChild( document.createElement( 'div' ) );
+    info.innerHTML = '<a href="" ><h1>' + document.title + '</h1></a>' +
+    '<div id=msg1 ></div>' +
+
+    '';
+
+    var fileName = 'origin-of-the-species.txt';
+
+	requestFile( fileName );
+
+
+	function requestFile( fileName ) {
+
+//		var xhr, text, lines, sections;
+
+		xhr = new XMLHttpRequest();
+		xhr.crossOrigin = 'anonymous';
+		xhr.open( 'GET', fileName, true );
+		xhr.onload = callback;
+		xhr.send( null );
+
+		function callback() {
+
+			text = xhr.responseText;
+			lines = text.split(/\r\n\r\n/);
+//			lines = text.split( '\n' ).map( function( line ) { return line.split( ',' ); } );
+
+            sections = []
+            for ( var i = 103; i < lines.length; i++ ) {
+
+                if ( lines[ i ].length > 200  ) { sections.push( lines[ i ] ) }
+            }
+
+			console.log( lines[ 8 ] );
+
+			console.log( sections );
+
+		}
+
+	}
+
+
+</script>
+</body>
+</html>

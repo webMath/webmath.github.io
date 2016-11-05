@@ -1,0 +1,180 @@
+<!doctype html><html lang=en >
+<head>
+<title>build-sample-files-iframes-text</title>
+<meta charset=utf-8 >
+</head>
+<body>
+<script>
+
+    var fileName = './text-samples/origin-of-the-species.txt';
+    var urlGITHubAPITreeContents = 'https://api.github.com/repos/mrdoob/three.js/git/trees/master?recursive=1';
+
+    var iframesSource = 'https://rawgit.com/mrdoob/three.js/dev/';
+
+    var header =
+
+        '<!doctype html>\n' +
+        '<html>\n' +
+        '<header>\n' +
+        '<style>\n' +
+        'body { font: 12pt monospace; left: 0; margin: 0 auto; position: absolute; right: 0; width: 800px; }\n' +
+        'iframe { height: 500px; width: 100%; }\n' +
+        '</style>\n' +
+        '</header>\n' +
+        '<body>\n\n' +
+        '<h1>Sample of Texts and Iframes</h1>\n\n' +
+
+    '';
+
+    var footer =
+
+        '<body>\n' +
+        '</html>\n' +
+    '';
+
+    var scetions, sources;
+
+    init();
+
+    function init() {
+
+        var css;
+
+		css = document.body.appendChild( document.createElement( 'style' ) );
+		css.innerHTML =
+
+			'body { font: 12pt monospace; left: 0; margin: 0 auto; position: absolute; right: 0; width: 800px; }' +
+
+			'button { background-color: #ccc; border: 2px #fff solid; color: #322; }' +
+            'iframe { height: 500px; width: 100%}' +
+
+        '';
+
+
+        document.body.style.cssText = ' ';
+
+        var info = document.body.appendChild( document.createElement( 'div' ) );
+        info.innerHTML =
+
+            '<p><button onclick=saveFile(); >Save File</button></p>' +
+            '<a href="" ><h1>' + document.title + '</h1></a>' +
+            '<div id=data ></div>' +
+
+        '';
+
+        requestTextFile( fileName );
+
+    }
+
+
+	function requestTextFile( url ) {
+
+		var xhr, text, lines;
+
+        requestFile( url, callback );
+
+		function callback( xhr ) {
+
+			text = xhr.target.responseText;
+			lines = text.split(/\r\n\r\n/);
+
+            sections = [];
+
+            for ( var i = 103; i < lines.length; i++ ) {
+
+                if ( lines[ i ].length > 200  ) { sections.push( lines[ i ] ) }
+
+            }
+
+            console.log( sections );
+
+            requestIframeTitles( urlGITHubAPITreeContents );
+
+		}
+
+	}
+
+    function requestIframeTitles( url ) {
+
+    	requestFile( url, callbackGH );
+
+        function callbackGH( xhr ) {
+
+    			var response, tree, items;
+
+    			response = JSON.parse( xhr.target.response );
+
+    			tree = response.tree;
+
+    			items = tree.map( function( item ) { return item.path; } );
+
+                sources = [];
+
+                for ( var i = 0; i < items.length; i++ ) {
+
+                    item = items[ i ];
+
+                    if ( !item.startsWith( 'examples/w') ) { continue; }
+                    if ( !item.endsWith( '.html') ) { continue; }
+
+                    sources.push( item );
+                }
+
+console.log( 'soureces', sources );
+
+                mungeData();
+
+    	};
+
+    }
+
+
+    function mungeData() {
+
+        txt = '';
+
+        for ( var i = 0; i < 5 /* sources.length */; i++ ) {
+
+            txt +=
+
+                '<h3>Item ' + ( i + 1 )  + ' of ' + sources.length + '</h3>\n\n' +
+                '<p>\n' + sections[ i ] + '\n</p>\n\n' +
+                '<iframe id=ifr' + i + ' src=' + iframesSource + sources[ i ] + ' ></iframe>\n' +
+                '<i>' + sources[ i ].slice( 9 ) + '</i>\n\n' +
+            '';
+
+        }
+
+        data.innerText = header + txt + footer;
+
+    }
+
+
+    function requestFile( url, callback ) {
+
+		var xhr;
+
+		xhr = new XMLHttpRequest();
+		xhr.crossOrigin = 'anonymous';
+		xhr.open( 'GET', url, true );
+		xhr.onload = callback;
+		xhr.send( null );
+
+	}
+
+
+	function saveFile() {
+
+		var blob = new Blob( [ data.innerText ] );
+		var a = document.body.appendChild( document.createElement( 'a' ) );
+		a.href = window.URL.createObjectURL( blob );
+		a.download = 'sample.html';
+		a.click();
+//		delete a;
+		a = null;
+
+	}
+
+</script>
+</body>
+</html>
