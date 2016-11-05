@@ -36,4 +36,4 @@ Wikipedia: [List of mathematical functions]( https://en.wikipedia.org/wiki/List_
 
 The challenge:
 
-Is it possible to link to a single JavaScript file so that [sample.html]( https://webmath.github.io/sandbox/sample.html ) loads and display in a timely fashion rather than crashing?
+Is it possible to add a link to a single JavaScript file to [sample.html]( https://webmath.github.io/sandbox/sample.html ) so that it loads and displays in a timely fashion rather than crashing?
