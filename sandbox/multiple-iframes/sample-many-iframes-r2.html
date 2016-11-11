@@ -7444,20 +7444,22 @@ we do see.
 
 <script>
 
-    var iframes;
-    var renderers = [];
-    var renderersLimit = 3;
+    var MIF = {};
+
+    MIF.iframes = [];
+    MIF.renderers = [];
+    MIF.renderersLimit = 3;
 
     init();
-	animate();
+    animate();
 
     function init() {
 
-        iframes = document.getElementsByTagName( 'iframe' );
+        MIF.iframes = document.getElementsByTagName( 'iframe' );
 
-        for ( var i = 0; i < iframes.length; i++ ) {
+        for ( var i = 0, iframe; i < MIF.iframes.length; i++ ) {
 
-            iframe = iframes[ i ];
+            iframe = MIF.iframes[ i ];
             iframe.sourceFile = iframe.src;
             iframe.src = '';
 
@@ -7465,47 +7467,47 @@ we do see.
 
     }
 
-    function updateView( ifr ) {
+    function updateView( iframe ) {
 
-		var views, furthestView;
+        var views, furthestView;
 
         views = document.getElementsByClassName( 'inView' );
 
-		if ( views.length > renderersLimit ) {
+        if ( views.length > MIF.renderersLimit ) {
 
-			furthestView = renderers.pop();
-			furthestView.className = '';
+            furthestView = MIF.renderers.pop();
+            furthestView.className = '';
             furthestView.src = '';
 
-		}
+        }
 
-		if ( ifr.className == '' ) {
+        if ( iframe.className == '' ) {
 
-			ifr.src = ifr.sourceFile;
-            ifr.className = 'inView';
+            iframe.src = iframe.sourceFile;
+            iframe.className = 'inView';
 
-			renderers.unshift( ifr );
+            MIF.renderers.unshift( iframe );
 
-		}
+        }
 
-	}
+    }
 
     function animate() {
 
-		requestAnimationFrame( animate );
+        requestAnimationFrame( animate );
 
-		for ( var i = 0, ifr, rect; i < iframes.length; i++ ) {
+        for ( var i = 0, iframe, rect; i < MIF.iframes.length; i++ ) {
 
-			ifr = iframes[ i ];
+            iframe = MIF.iframes[ i ];
 
-			rect = ifr.getBoundingClientRect();
+            rect = iframe.getBoundingClientRect();
 
-            if ( rect.bottom > 0 && rect.top < window.innerHeight ) { updateView( ifr ); }
+            if ( rect.bottom > 0 && rect.top < window.innerHeight ) { updateView( iframe ); }
 
-		}
+        }
 
-	}
+    }
 
 </script>
-<body>
+</body>
 </html>

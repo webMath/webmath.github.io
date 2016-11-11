@@ -6,7 +6,7 @@
 <body>
 <script>
 
-    var fileName = './text-samples/origin-of-the-species.txt';
+    var fileName = './text-samples/darwin-origin-of-the-species.txt';
     var urlGITHubAPITreeContents = 'https://api.github.com/repos/mrdoob/three.js/git/trees/master?recursive=1';
 
     var iframesSource = 'https://rawgit.com/mrdoob/three.js/dev/';
@@ -14,7 +14,8 @@
     var header =
 
         '<!doctype html>\n' +
-        '<html>\n' +
+        '<html lang=en >\n' +
+        '<meta charset=utf-8 >\n' +
         '<header>\n' +
         '<style>\n' +
         'body { font: 12pt monospace; left: 0; margin: 0 auto; position: absolute; right: 0; width: 800px; }\n' +
@@ -28,18 +29,18 @@
 
     var footer =
 
-        '<body>\n' +
+        '</body>\n' +
         '</html>\n' +
+
     '';
 
-    var scetions, sources;
+    var sections, sources;
 
     init();
 
     function init() {
 
         var css;
-
 		css = document.body.appendChild( document.createElement( 'style' ) );
 		css.innerHTML =
 
@@ -86,7 +87,7 @@
 
             }
 
-            console.log( sections );
+//console.log( sections );
 
             requestIframeTitles( urlGITHubAPITreeContents );
 
@@ -104,11 +105,15 @@
 
     			response = JSON.parse( xhr.target.response );
 
+//                lastMod = xhr.target.getResponseHeader ("Last-Modified");
+                headers = xhr.target.getAllResponseHeaders ();//
+
     			tree = response.tree;
 
     			items = tree.map( function( item ) { return item.path; } );
 
                 sources = [];
+                mods = [];
 
                 for ( var i = 0; i < items.length; i++ ) {
 
@@ -118,9 +123,11 @@
                     if ( !item.endsWith( '.html') ) { continue; }
 
                     sources.push( item );
+//                    mods.push( lastMod );
+
                 }
 
-console.log( 'soureces', sources );
+//console.log( 'sources', sources );
 
                 mungeData();
 
@@ -139,7 +146,7 @@ console.log( 'soureces', sources );
 
                 '<h3>Item ' + ( i + 1 )  + ' of ' + sources.length + '</h3>\n\n' +
                 '<p>\n' + sections[ i ] + '\n</p>\n\n' +
-                '<iframe id=ifr' + i + ' src=' + iframesSource + sources[ i ] + ' ></iframe>\n' +
+                '<iframe src=' + iframesSource + sources[ i ] + ' ></iframe>\n' +
                 '<i>' + sources[ i ].slice( 9 ) + '</i>\n\n' +
             '';
 
@@ -152,7 +159,7 @@ console.log( 'soureces', sources );
 
     function requestFile( url, callback ) {
 
-		var xhr;
+	//	var xhr;
 
 		xhr = new XMLHttpRequest();
 		xhr.crossOrigin = 'anonymous';
