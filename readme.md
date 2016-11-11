@@ -29,15 +29,23 @@ Wikipedia: [List of mathematical functions]( https://en.wikipedia.org/wiki/List_
 * http://mpmath.org/
 
 ## Stuff in the Sandbox
-
+<!--
 * [sample.html]( https://webmath.github.io/sandbox/sample.html ) ~ 266 iframes and texts ~ crashes ~ [source]( https://github.com/webMath/webmath.github.io/blob/master/sandbox/sample.html )
 * [sample-5-only.html]( https://webmath.github.io/sandbox/sample-5-only.html ) ~ 5 iframes and texts ~ [source]( https://github.com/webMath/webmath.github.io/blob/master/sandbox/sample-5-only.html )
 * [build-sample-files-iframes-text-r1.html]( https://webmath.github.io/sandbox/build-sample-files-iframes-text-r1.html )
+-->
 
-The challenge:
+### The challenge:
 
-Is it possible to add a link to a single JavaScript file to [sample.html]( https://webmath.github.io/sandbox/sample.html ) so that it loads and displays in a timely fashion rather than crashing?
+Is it possible to add a link to a single JavaScript file to sample.html so that it loads and displays in a timely fashion rather than crashing?
 
-WIP Possibility
+### WIP Possibility
 
-* [sample-many-iframes-r1.html]( https://webmath.github.io/sandbox/sample-many-iframes-r1.html ) ~ 266 iframes and texts ~ [source]( https://github.com/webMath/webmath.github.io/blob/master/sandbox/sample-many-iframes-r1.html )
+* [sample-many-iframes-r3.html]( https://webmath.github.io/sandbox/multiple-iframes/sample-many-iframes-r3.html ) ~ 266 iframes and texts ~ [source]( https://github.com/webMath/webmath.github.io/blob/master/sandbox/ )
+
+
+#### 2016-11-10
+
+* Challenge mostly accomplished
+* Challenge #2: is it possible with only a single set of script tags?
+ 
