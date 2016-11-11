@@ -35,11 +35,11 @@ Wikipedia: [List of mathematical functions]( https://en.wikipedia.org/wiki/List_
 * [build-sample-files-iframes-text-r1.html]( https://webmath.github.io/sandbox/build-sample-files-iframes-text-r1.html )
 -->
 
-### The challenge:
+### Challenge #1
 
 Is it possible to add a link to a single JavaScript file to sample.html so that it loads and displays in a timely fashion rather than crashing?
 
-### WIP Possibility
+### Solution to Challenge 1
 
 * [sample-many-iframes-r3.html]( https://webmath.github.io/sandbox/multiple-iframes/sample-many-iframes-r3.html ) ~ 266 iframes and texts ~ [source]( https://github.com/webMath/webmath.github.io/blob/master/sandbox/ )
 
@@ -48,4 +48,17 @@ Is it possible to add a link to a single JavaScript file to sample.html so that 
 
 * Challenge mostly accomplished
 * Challenge #2: is it possible with only a single set of script tags?
- 
+
+### Challenge #2
+
+Is it possible to comply with Challenge #1 using only a single set of <script> tags?
+
+### Solution to Challenge #2
+
+* [sample-266-multiple-iframes-r1.html]( https://webmath.github.io/sandbox/multiple-iframes/sample-266-multiple-iframes-r1.html ) ~ 266 iframes and texts
+* [source]( https://github.com/webMath/webmath.github.io/blob/master/sandbox/ )
+* See also [sample-5-multiple-iframes-test]( https://webmath.github.io/sandbox/multiple-iframes/sample-5-multiple-iframes-test2.html ) ~ has seven failed experiments in the comments
+
+### 2016-11-11
+
+* Challenge #2 submission - only tested on Chrome
