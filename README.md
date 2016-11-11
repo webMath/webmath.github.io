@@ -51,7 +51,7 @@ Is it possible to add a link to a single JavaScript file to sample.html so that 
 
 ### Challenge #2
 
-Is it possible to comply with Challenge #1 using only a single set of <script> tags?
+Is it possible to comply with Challenge #1 using only a single set of script tags?
 
 ### Solution to Challenge #2
 
