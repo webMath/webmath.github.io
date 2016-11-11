@@ -63,5 +63,3 @@
         MIF.animate();
 
     }
-
-    MIF.init();
