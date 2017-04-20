@@ -1,6 +1,5 @@
-<span style=display:none; >[You are now in GitHub source code view - click this link to view Read Me file as a web page]
-( https://webmath.github.io/index.html "View file as a web page." ) </span>
-<input type=button onclick=window.location.href='https://github.com/webMath/webmath.github.io'; value='You are now in GitHub web page view - Click this button to view Read Me file as source code' >
+<span style=display:none; >[You are now in GitHub source code view - click this link to view Read Me file as a web page]( https://webmath.github.io/index.html "View file as a web page." ) </span>
+<div><input type=button onclick=window.location.href='https://github.com/webMath/webmath.github.io'; value='You are now in GitHub web page view - Click this button to view Read Me file as source code' ></div>
 
 
 [Web Math Read Me]( index.html#readme.md )
