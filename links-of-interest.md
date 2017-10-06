@@ -50,6 +50,6 @@
 	* http://gallery.bridgesmathart.org/
 	* http://gallery.bridgesmathart.org/exhibitions/2015-joint-mathematics-meetings
 * http://discretization.de/en/
-	* * https://www.discretization.de/media/filer_public/2014/09/05/20140413icm-proceedings-ziegler.pdf
+	* https://www.discretization.de/media/filer_public/2014/09/05/20140413icm-proceedings-ziegler.pdf
 * http://mathex.org/
 * http://momath.org/
