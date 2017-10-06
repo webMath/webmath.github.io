@@ -39,9 +39,6 @@
 * http://kottke.org/16/01/17-equations-that-changed-the-world
 * http://elegantcoding.com/2011/11/eleven-equations-true-computer-science.html
 
-## Articles of Interest
-
-* https://www.discretization.de/media/filer_public/2014/09/05/20140413icm-proceedings-ziegler.pdf
 
 ## Organizations
 
@@ -49,5 +46,6 @@
 	* http://gallery.bridgesmathart.org/
 	* http://gallery.bridgesmathart.org/exhibitions/2015-joint-mathematics-meetings
 * http://discretization.de/en/
+	* * https://www.discretization.de/media/filer_public/2014/09/05/20140413icm-proceedings-ziegler.pdf
 * http://mathex.org/
 * http://momath.org/
