@@ -17,6 +17,7 @@
 	* https://medium.com/@jeremyjkun/habits-of-highly-mathematical-people-b719df12d15e
 	* https://j2kun.svbtle.com/mathematicians-are-chronically-lost-and-confused
 * http://hardmath123.github.io/
+* https://johncarlosbaez.wordpress.com/
 * http://blog.stephenwolfram.com/
 
 
@@ -42,6 +43,9 @@
 
 ## Organizations
 
+* http://ams.org/
+	* http://www.ams.org/mathimagery/thumbnails.php?album=46
+	* https://blogs.ams.org/visualinsight/ < John Baez
 * http://bridgesmathart.org/
 	* http://gallery.bridgesmathart.org/
 	* http://gallery.bridgesmathart.org/exhibitions/2015-joint-mathematics-meetings
