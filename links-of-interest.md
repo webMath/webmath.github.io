@@ -5,10 +5,10 @@
 ## Forums
 
 * https://www.reddit.com/r/math/
-* http://education.lms.ac.uk/
 
 ## Blogs
 
+* http://education.lms.ac.uk/
 * https://angelavc.wordpress.com
 	* https://angelavc.wordpress.com/collections-of-mathematical-models/
 * http://elegantcoding.com/search/label/Math
@@ -26,7 +26,7 @@
 * http://perspectiveinfinity.com
 * http://www.popmath.org.uk/
 	* http://www.popmath.org.uk/centre/pagescpm/icmi89.html
-* http://visualizingmath.tumblr.com/
+* http://visualizingmath.tumblr.com/archive
 
 ## Book related
 
