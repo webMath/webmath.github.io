@@ -18,6 +18,10 @@ Wikipedia: [Special Functions]( https://en.wikipedia.org/wiki/Special_functions 
 
 Wikipedia: [List of mathematical functions]( https://en.wikipedia.org/wiki/List_of_mathematical_functions )
 
+## Guidelines for this organization
+
+* Nothing breakable: scripts linking to external libraries should always use a numbered version
+
 ## Peeps in the business
 
 * https://github.com/bos/math-functions
