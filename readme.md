@@ -22,6 +22,8 @@ Wikipedia: [List of mathematical functions]( https://en.wikipedia.org/wiki/List_
 
 * Nothing breakable: scripts linking to external libraries should always use a numbered version
 
+* Every new HTML page should have a minimal readme.md file with at least a link to the live version
+
 ## Peeps in the business
 
 * https://github.com/bos/math-functions
