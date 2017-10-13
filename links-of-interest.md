@@ -3,7 +3,6 @@
 
 _links should be in alpha order in each section_
 
-
 ## Articles
 
 * https://www.rdmag.com/news/2014/09/new-foundation-mathematics
@@ -12,10 +11,12 @@ _links should be in alpha order in each section_
 
 * https://mathoverflow.net/
 	* https://mathoverflow.net/questions/13089/why-do-so-many-textbooks-have-so-much-technical-detail-and-so-little-enlightenme
+* https://www.reddit.com/r/dataisbeautiful/
 * https://www.reddit.com/r/math/
 	* https://www.reddit.com/r/math/comments/50z3rj/imaginary_numbers_are_real_part_13_riemann/
 	* https://www.reddit.com/r/math/comments/4jhag2/what_is_the_most_beautifully_written_math_book/
 	* https://www.reddit.com/r/math/comments/4pdpx7/where_else_do_you_get_your_math_newsinformation/
+* https://www.reddit.com/r/mathgifs/
 
 ## Blogs
 
