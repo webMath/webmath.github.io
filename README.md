@@ -11,7 +11,7 @@ Wikipedia sayeth:
 
 > There is no general formal definition, but the list of mathematical functions contains functions which are commonly accepted as special.
 
-Our mission is to put this stuff in your face so fast, and with so little effort and so stupidly that you actually understand it.
+Our mission is to put this stuff in your face so fast, and with so little effort and so simply that you actually understand it.
 
 
 Wikipedia: [Special Functions]( https://en.wikipedia.org/wiki/Special_functions )
