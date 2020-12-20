@@ -2,8 +2,8 @@
 <div><input type=button onclick=window.location.href='https://github.com/webMath/webmath.github.io'; value='You are now in GitHub web page view - Click this button to view Read Me file as source code' ></div>
 
 
-[Web Math Read Me]( index.html#readme.md )
-===
+# [Web Math Read Me]( index.html#readme.md )
+
 
 Wikipedia sayeth:
 
